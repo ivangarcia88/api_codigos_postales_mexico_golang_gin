@@ -6,10 +6,6 @@ API desarrollada en Golang (Gin) para consultar colonia, municipio y estado sobr
 
 [https://golangcpapimexico-production.up.railway.app/code/45070](https://golangcpapimexico-production.up.railway.app/code/45070)
 
-**Documentación de los endpoints**
-
-[https://codigos-postales-fastapi.onrender.com/docs](https://codigos-postales-fastapi.onrender.com/docs)
-
 **Esta API emplea información provista por el sitio oficial:**
 
 [https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx](https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/CodigoPostal_Exportar.aspx)

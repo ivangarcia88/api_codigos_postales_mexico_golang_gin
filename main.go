@@ -13,7 +13,6 @@ import (
 func main() {
 
 	//Read Postal Code Database (JSON FILE)
-
 	// Open our jsonFile
 	jsonFile, err := os.Open("codigos_postales_reduced.json")
 	if err != nil {
@@ -27,17 +26,13 @@ func main() {
 	var result map[string]interface{}
 	json.Unmarshal([]byte(byteValue), &result)
 
-	//Running API endpoint
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8000"
-	}
-
+	//API definitions
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
 	r.GET("/code/:code", func(c *gin.Context) {
 		c.JSON(http.StatusOK, result[c.Param("code")])
 	})
-	r.Run("0.0.0.0:8000") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	//r.Run("0.0.0.0:8000") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	r.Run()
 }

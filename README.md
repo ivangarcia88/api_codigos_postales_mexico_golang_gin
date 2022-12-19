@@ -15,7 +15,7 @@ La información fue transformada a un archivo JSON mediante un script, el códig
 [https://github.com/ivangarcia88/mexican_postal_code_reformat](https://github.com/ivangarcia88/mexican_postal_code_reformat)
 
 
-Para iniciar el servicio, se recomienda emplear uvicorn
+Para iniciar el servicio
 
 ```plaintext
 go run main.go
